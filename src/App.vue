@@ -1,16 +1,21 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <div :style="{color: '#047ddb'}">
+      <h1>Checklists</h1>
+    </div>
+    <!--    {{ useUserStore() }}-->
+    <UserList></UserList>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import UserList from "./components/UserList";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    UserList
+  },
 }
 </script>
 
@@ -22,5 +27,8 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  background-color: #06bd54;
+  /*body-bg: #06bd54;*/
+  /*body-color: #06bd54;*/
 }
 </style>
