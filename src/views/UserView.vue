@@ -8,9 +8,10 @@
 export default {
   name: "UserView",
   data( data ) {
+    console.log( "In UserView ..." );
     console.log( data );
     return {
-      user: data.username
+      user: data
     }
   },
 }

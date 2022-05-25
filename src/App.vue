@@ -1,15 +1,15 @@
 <template>
-  <div>
-    <div :style="{color: '#047ddb'}">
-      <h1>Checklists</h1>
-    </div>
+  <div class="container-fluid" style="{background-color: #2c3e50}">
+    <!--    <div>-->
+    <!--      <h1 :style="{color: '#047ddb'}">Checklists</h1>-->
+    <!--    </div>-->
     <!--    {{ useUserStore() }}-->
     <UserList></UserList>
   </div>
 </template>
 
 <script>
-import UserList from "./components/UserList";
+import UserList from "./views/UserList";
 
 export default {
   name: 'App',
@@ -19,16 +19,6 @@ export default {
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-  background-color: #06bd54;
-  /*body-bg: #06bd54;*/
-  /*body-color: #06bd54;*/
-}
+<style lang="sass">
+@import "/node_modules/bootstrap/scss/bootstrap.scss"
 </style>
