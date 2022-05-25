@@ -8,7 +8,7 @@
       <template #item="{el}">
         <div>
           {{ el }}
-          <!--          <UserView user="{el}"/>-->
+          <!--          <User user="{el}"/>-->
         </div>
       </template>
     </draggable>
@@ -26,7 +26,7 @@ export default {
   name: "UserList",
   components: {
     draggable,
-    // UserView,
+    // User,
     // useUserStore
   },
   setup() {
